@@ -1,3 +1,5 @@
 .idea
 .DS_Store
-dist
+node_modules
+dist/*
+!dist/mail_check.user.js
