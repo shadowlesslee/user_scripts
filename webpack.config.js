@@ -41,7 +41,6 @@ module.exports = {
     }),
     new Webpack.BannerPlugin({
       banner(options) {
-        console.log('options', options);
         return `// ==UserScript==
         // @name         敏感词匹配
         // @namespace    http://mail.ugreen.com/
@@ -63,7 +62,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader', 'eslint-loader'],
       },
       // Images
       {
