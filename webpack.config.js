@@ -3,6 +3,7 @@ const Webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const TerserWebpackPlugin = require("terser-webpack-plugin")
 
 module.exports = {
   entry: {
@@ -19,6 +20,29 @@ module.exports = {
     compress: true,
     hot: true,
     port: 8080,
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserWebpackPlugin({
+        extractComments: {
+          condition: "some",
+          banner: (licenseFile) => {
+            return `// ==UserScript==
+// @name         敏感词匹配
+// @namespace    http://mail.ugreen.com/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://mail.ugreen.com/cgi-bin/frame_html*
+// @match        https://exmail.qq.com/cgi-bin/frame_html*
+// @icon         https://www.google.com/s2/favicons?domain=tampermonkey.net
+// @grant        none
+// ==/UserScript==`;
+          },
+        }
+      })
+    ],
   },
   plugins: [
     // 热启动模块
@@ -38,22 +62,6 @@ module.exports = {
           to: 'public'
         }
       ]
-    }),
-    new Webpack.BannerPlugin({
-      banner(options) {
-        return `// ==UserScript==
-        // @name         敏感词匹配
-        // @namespace    http://mail.ugreen.com/
-        // @version      0.1
-        // @description  try to take over the world!
-        // @author       You
-        // @match        http://mail.ugreen.com/cgi-bin/frame_html*
-        // @match        https://exmail.qq.com/cgi-bin/frame_html*
-        // @icon         https://www.google.com/s2/favicons?domain=tampermonkey.net
-        // @grant        none
-        // ==/UserScript==`;
-      },
-      raw: true,
     }),
   ],
   module: {

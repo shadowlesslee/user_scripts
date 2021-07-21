@@ -1,4 +1,6 @@
-
+import $utils from "../utils/index";
+import Message from "../modules/element";
+const $message = new Message()
 
 // 选项卡
 class Tab {
