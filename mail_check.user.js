@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         敏感词匹配
 // @namespace    http://mail.ugreen.com/
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       You
 // @match        http://mail.ugreen.com/cgi-bin/frame_html*
