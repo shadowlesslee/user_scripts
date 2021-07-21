@@ -11,7 +11,7 @@
 
 !(function () {
     'use strict';
-    console.log('hello, old baby~')
+    console.log('hello, old baby~ ')
     const ar = ['مراجعة', 'نجمة', 'معدل', 'سلبي', 'إيجابي', 'إزالة', 'حذف', 'تغيير', 'تتغير', 'تحديث', 'تعديل', 'تخلص من', 'خبرة التسوق', 'ردود الفعل', 'موقع الكتروني', 'حلقة الوصل', 'شكرا', 'شكرا لكم', 'إذا كنت بحاجة إلى أي مساعدة أخرى، فلا تتردد في الاتصال بنا', 'رقم التعريف الخاص بالطلب', 'عنوان', 'موقعك', 'خصم', 'ترقية وظيفية', 'السعر']
     const de = ['Bewertung', 'Sternen', 'Rezension', 'Comment', 'Kommentar', 'Negativ', 'Positiv', 'Schlecht', 'Gut', 'Entfernen', 'Löschen', 'Veränderung', 'Aktualisieren', 'Bearbeiten', 'Beseitigen, abschütteln', 'Kauffserfahrungen', 'Feedback', 'www.', 'Webseite', 'Verknüpfung', 'Danke, vielen dank, dankschön, ', 'Wenn Sie andere Hilfe brauchen, kontaktieren Sie bitte uns, werden wir Ihnen helfen. ', 'Bestellnummer', 'sku', 'Asin', 'Adresse', 'Ort', 'Rabatt', 'Coupon', 'Gutschein', 'Beförderung', 'Preis', 'herunterladen']
     const fr = ['Commentaire', 'Évaluation', 'Avis', 'Étoile', 'Taux', 'Négatif', 'Positif', 'Mauvais', 'Bon', 'Retirer', 'Changer', 'Renouveller', 'Mettre à jour', 'Éditer', 'Expérience d\'achat', 'Feedback', 'www.', 'Site', 'Lien', 'Merci', 'Je vous remercie', 'si vous avez besoin d\'une autre aide, n\'hésitez pas à nous contacter', 'numéro de commande', 'sku', 'Asin', 'Adresse', 'Emplacement', 'Remise', 'Promotion', 'Code', 'Prix', 'Télécharger']
