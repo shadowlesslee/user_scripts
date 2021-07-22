@@ -10,7 +10,7 @@ const it = ['Recensione', 'Stella', 'Vota', 'Valutazione', 'Negativo', 'Positivo
 const en = ['Review', 'Star', 'Rate', 'Rating', 'Negative', 'Positive', 'Bad', 'Remove', 'Delete', 'Change', 'Update', 'Edit', 'Get rid of', 'Shopping experience', 'feedback', 'www.', 'Website', 'Link', 'thanks', 'thank you', 'if you need any other help', 'please feel free to contact us', 'Order ID', 'sku', 'Asin', 'Address', 'Location', 'Discount', 'Promotion', 'Price', 'download']
 
 const keywords = {
-  ar, de, fr, nl, ja, sv, es, it, en
+  en, de, fr, nl, sv, es, it, ja, ar
 }
 
 export {
